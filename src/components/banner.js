@@ -8,7 +8,7 @@ const subtitleStyles = {
   color: "coral",
 };
 
-const Banner = () => {
+const Banner = ({ children }) => {
   return (
     <header className="row mb-4">
       <div className="col-5">
@@ -21,7 +21,7 @@ const Banner = () => {
         />
       </div>
       <div className="row-7 mt-5" style={subtitleStyles}>
-        Providing houses all over the world
+        {children}
       </div>
     </header>
   );
